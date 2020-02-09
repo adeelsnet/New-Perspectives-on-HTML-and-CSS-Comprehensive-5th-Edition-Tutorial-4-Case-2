@@ -1,0 +1,194 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 4
+   Case Problem 2
+
+   Pizza Style Sheet
+   Author: Adeel Ahmed
+   Date:   March-6, 2019   
+
+   Filename:         pizza.css
+   Supporting Files: 
+
+*/
+
+header,
+section,
+aside,
+footer,
+nav {
+   display: block;
+}
+
+body * {
+   padding: 0px;
+   margin: 0px;
+}
+
+body {
+   background-color: red;
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+div#container {
+   width: 1000px;
+   margin: 0px auto;
+   border-right: solid 1px black;
+   border-left: solid 1px black;
+   background: url(redbar.png) top left repeat-y;
+   background-color: white;
+}
+
+header {
+   background-color: white;
+   height: 100px;
+}
+
+.horizontal {
+   height: 70px;
+   width: 100%;
+   background-color: white;
+}
+
+.horizontal li {
+   background-color: white;
+   font-size: 16px;
+   height: 50px;
+   line-height: 50px;
+   width: 180px;
+   display: block;
+   float: left;
+   margin-right: 5px;
+   margin-left: 5px;
+   text-align: center;
+}
+
+.horizontal a {
+   display: block;
+   background-color: red;
+   color: white;
+   border-radius: 30px / 25px;
+   -webkit-border-radius: 30px / 25px;
+   -moz-border-radius: 30px / 25px;
+   -ms-border-radius: 30px / 25px;
+   -o-border-radius: 30px / 25px;
+   text-decoration: none;
+}
+
+.horizontal a:hover {
+   background-color: rgb(255, 101, 101);
+   color: black;
+}
+
+.vertical {
+   float: left;
+   clear: left;
+   width: 200px;
+}
+
+.vertical li {
+   list-style: none;
+   text-indent: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.vertical a {
+   color: white;
+   text-decoration: none;
+
+}
+
+.vertical a:hover {
+   color: black;
+   
+}
+
+#main {
+   background-color: rgb(255, 211, 211);
+   float: left;
+   width: 600px;
+}
+
+#main > p {
+   font-size: 20px;
+   margin: 15px;
+}
+
+#main img {
+   float: right;
+   margin: 15px;
+   width: 350px;
+   border-bottom-left-radius: 350px;
+   -webkit-bottom-left-radius: 350px;
+   -moz-bottom-left-radius: 350px;
+   -ms-bottom-left-radius: 350px;
+   -o-bottom-left-radius: 350px;
+}
+
+.coupon {
+   border: dashed 5px black;
+   float: left;
+   width: 170px;
+   height: 150px;
+   margin: 20px 10px;
+   background: url(slice.png) center no-repeat,
+               url(notice.png) bottom right no-repeat;
+   background-color: white;   
+}
+
+.coupon h1 {
+   color: white;
+   background-color: rgb(192, 0, 0);
+   font-size: 16px;
+   letter-spacing: 2px;
+   text-align: center;
+   height: 25px;
+   font-variant: small-caps;
+}
+
+.coupon > p {
+   font-size: 14px;
+   text-align: center;
+   margin: 5px;
+}
+
+aside {
+   float: left;
+   width: 200px;
+}
+
+aside h1 {
+   color: rgb(192, 0, 0);
+   letter-spacing: 2px;
+   font-weight: normal;
+   text-align: center;
+}
+
+aside li {
+   background-color: rgb(255, 135, 135);
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+   color: black;
+   list-style: none;
+   margin: 10px;
+   padding: 5px;
+}
+
+footer {
+   margin-left: 200px;
+   clear: left;
+}
+
+footer address {
+   border-top: solid red 1px;
+   color: red;
+   font-size: 10px;
+   font-style: normal;
+   text-align: center;
+   margin-top: 25px;
+   padding-bottom: 20px;
+}
